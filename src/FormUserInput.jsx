@@ -15,6 +15,8 @@ function FormUserInput(props) {
   let generateTableWithColumsLines = (event) => {
     event.preventDefault();      
     props.createLinesColumns(line, column);
+    updateColumn(0);
+    updateLine(0);
   }
 
   return (
@@ -26,6 +28,7 @@ function FormUserInput(props) {
             <input type="number" 
                    className="form-control" 
                    id="columns" 
+                   value={column}
                    onChange={columnInputHandler} />
           </div>
           <div className="col-md-6">
@@ -33,6 +36,7 @@ function FormUserInput(props) {
             <input type="number" 
                    className="form-control" 
                    id="lines" 
+                   value={line}
                    onChange={lineInputHandler} />
           </div>
         </div>
