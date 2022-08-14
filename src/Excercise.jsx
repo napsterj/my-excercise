@@ -33,6 +33,9 @@ function Excercise() {
           </table>
         </div>
       </div>
+      <div className="row m-2">
+         <p><span className='text-info'>Columns :</span> {columnArray.length}     <span className='text-info'>Rows :</span> {rowArray.length} </p>   
+      </div>
       <div className="row m-5">
         <FormUserInput createLinesColumns={assignLinesColums} />
       </div>

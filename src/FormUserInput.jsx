@@ -27,16 +27,20 @@ function FormUserInput(props) {
             <label htmlFor="columns" className="form-label">Columns:</label>            
             <input type="number" 
                    className="form-control" 
+                   style={{borderColor: "red"}}
                    id="columns" 
                    value={column}
-                   onChange={columnInputHandler} />
+                   min="0"
+                   onChange={columnInputHandler}  />
           </div>
           <div className="col-md-6">
             <label htmlFor="lines" className="form-label">Lines:</label>
             <input type="number" 
                    className="form-control" 
+                   style={{borderColor: "red"}}
                    id="lines" 
                    value={line}
+                   min="0"
                    onChange={lineInputHandler} />
           </div>
         </div>
