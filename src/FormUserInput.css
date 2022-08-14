@@ -1,0 +1,10 @@
+  label {
+    font-size:18px;
+    font-family:Verdana;
+    margin: 10px 20px;
+  }
+  
+  button {
+    width: 300px;
+    margin-top: 10px;
+  }
